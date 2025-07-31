@@ -1,0 +1,24 @@
+--- Summary 1 ---
+Here is a factual and concise summary of the document chunk:
+
+**Company Information**
+
+* Company name: Oracle Corporation
+* State of incorporation: Delaware
+* I.R.S. Employer Identification Number: 54-2185193
+* Address of principal executive offices: 2300 Oracle Way, Austin, Texas 78741
+* Phone number: (737) 867-1000
+
+**Securities Registered**
+
+* Common Stock, par value $0.01 per share (ORCL)
+* 3.125% senior notes due July 2025 (ORCL)
+
+**Filing Information**
+
+* Form 10-K: Annual Report
+* Filing date: May 31, 2025
+* Commission File Number: 001-35992
+
+No specific discoveries, IP, operational processes, or key product information are mentioned in this document chunk. It appears to be a basic filing document providing company and securities registration information.
+

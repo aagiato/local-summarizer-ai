@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Summary Detail</title>
+</head>
+<body>
+    <h1>Summary for {{ summary.filename }}</h1>
+    <p><strong>Uploaded:</strong> {{ summary.uploaded_at }}</p>
+    <p><strong>Model:</strong> {{ summary.model }}</p>
+    <p><strong>Temperature:</strong> {{ summary.temperature }}</p>
+    <hr>
+    {% for item in summary.summaries %}
+        <h3>--- Summary {{ loop.index }} ---</h3>
+        <p>{{ item }}</p>
+        <hr>
+    {% endfor %}
+    <br>
+    <a href="/summaries">Back to All Summaries</a>
+</body>
+</html>

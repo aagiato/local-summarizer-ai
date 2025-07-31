@@ -1,0 +1,34 @@
+--- Summary 1 ---
+Here is a concise summary of the document:
+
+**Company Information**
+
+* Company name: Oracle Corporation
+* State of incorporation: Delaware
+* I.R.S. Employer Identification Number: 54-2185193
+* Address of principal executive offices: 2300 Oracle Way, Austin, Texas 78741
+* Phone number: (737) 867-1000
+
+**Securities Registration**
+
+* Common Stock, par value $0.01 per share: listed on the New York Stock Exchange under the trading symbol ORCL
+* 3.125% senior notes due July 2025: listed on the New York Stock Exchange under the trading symbol ORCL
+
+**Company Status**
+
+* Well-known seasoned issuer: YES (☒)
+* Not required to file reports: NO (☐)
+* Filed all reports required during the preceding 12 months: YES (☒)
+* Been subject to filing requirements for the past 90 days: YES (☒)
+
+**Financial Information**
+
+* Aggregate market value of voting stock held by non-affiliates as of May 31, 2025: $305,793,119,000
+* Number of shares of common stock outstanding as of June 13, 2025: 2,808,833,000
+
+**Incorporated Documents**
+
+* Portions of the registrant's definitive proxy statement relating to its 2025 annual meeting of stockholders are incorporated by reference into Part III of this Annual Report on Form 10-K.
+
+Please note that I did not make any assumptions or interpretations about the company's operations, products, or IP.
+

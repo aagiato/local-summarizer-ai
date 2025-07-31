@@ -1,0 +1,32 @@
+--- Summary 1 ---
+Here is a factual and concise summary of the document chunk:
+
+**Company Information**
+
+* Company Name: Oracle Corporation
+* State of Incorporation: Delaware
+* Employer Identification Number (EIN): 54-2185193
+* Address: 2300 Oracle Way, Austin, Texas 78741
+* Phone Number: (737) 867-1000
+
+**Securities Registered**
+
+* Common Stock, par value $0.01 per share (ORCL)
+* 3.125% senior notes due July 2025 (ORCL)
+
+**Reporting Status**
+
+* Large Accelerated Filer (YES ☒)
+
+**Financial Information**
+
+* Fiscal Year Ended: May 31, 2025
+* Aggregate Market Value of Voting Stock held by non-affiliates: $305,793,119,000 as of May 31, 2025
+* Number of shares of common stock outstanding as of June 13, 2025: 2,808,833,000
+
+**Other Information**
+
+* Documents Incorporated by Reference: Portions of the registrant's definitive proxy statement relating to its 2025 annual meeting of stockholders are incorporated by reference into Part III of this Annual Report on Form 10-K.
+
+Let me know if you'd like me to summarize any specific sections or provide more information!
+

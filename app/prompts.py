@@ -1,20 +1,17 @@
-def build_structured_prompt(text_chunk: str) -> str:
-    return f"""
-\n\nHuman:
-You are an expert technical summarizer.
+def get_summary_prompt(chunk):
+    return (
+        "You are an analyst at a venture debt or venture capital firm. "
+        "Summarize the following document chunk in a factual and concise way. "
+        "Include important dates, discoveries, IP, operational processes, and key product information. "
+        "Act without making assumptions.\n\n"
+        f"{chunk}\n\nSummary:"
+    )
 
-Summarize the following document segment in a structured format with the following three sections:
-
-1. Introduction: Brief overview of what this section is about.
-2. Key Points: A concise list of 3–5 main ideas or insights, formatted as bullet points.
-3. Conclusion: A short wrap-up or implication of this section.
-
-Keep each section concise and professional. Avoid repetition.
-Begin your response with the phrase: "Structured Summary:"
-
----
-Input Text:
-{text_chunk}
-
-\n\nAssistant:
-"""
+def get_label_prompt(chunk):
+    return (
+        "You are an analyst categorizing business documents. "
+        "Provide a short (max 10-word) factual label for the following document chunk. "
+        "Examples: 'Oracle Corporation 10-K 2025', 'Amazon Q1 Press Release', 'Google Earnings Call Notes'. "
+        "Avoid speculation. Just return the label text, don't say something like 'Here is a factual and concise summary of the', no commentary.\n\n"
+        f"{chunk}\n\nLabel:"
+    )

@@ -1,0 +1,10 @@
+{
+  "filename": "7455eba6-bb80-41d3-96b7-12111eae648c.pdf",
+  "summaries": [
+    "Here is a factual and concise summary of the provided document chunk:\n\n* The filing is an Annual Report on Form 10-K for the fiscal year ended May 31, 2025, submitted by Oracle Corporation to the Securities and Exchange Commission (SEC).\n* The company's exact name is Oracle Corporation, with its state of incorporation as Delaware.\n* The principal executive offices are located at 2300 Oracle Way, Austin, Texas 78741.\n* The registrant has securities registered under Section 12(b) of the Act: Common Stock, par value $0.01 per share, and 3.125% senior notes due July 2025 (ORCL).\n* The company is a well-known seasoned issuer, with all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months.\n* Oracle has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T (\u00a7232.405 of this chapter) during the preceding 12 months.\n* The company is a large accelerated filer, with no emerging growth company designation.\n\nNo discoveries, IP, operational processes, or key product information are mentioned in this document chunk."
+  ],
+  "uploaded_at": "2025-07-31T19:11:08.456752",
+  "temperature": 0.3,
+  "model": "llama3",
+  "label": "Oracle Corporation Form 10-K"
+}

@@ -1,0 +1,29 @@
+Here is a factual and concise summary of the document chunk:
+
+**Company Information**
+
+* Company name: Oracle Corporation
+* State of incorporation: Delaware
+* Employer Identification Number (EIN): 54-2185193
+* Address: 2300 Oracle Way, Austin, Texas 78741
+* Telephone number: (737) 867-1000
+
+**Securities Registered**
+
+* Common Stock, par value $0.01 per share (ORCL)
+* 3.125% senior notes due July 2025 (ORCL)
+
+**Other Filings and Disclosures**
+
+* The company is a well-known seasoned issuer.
+* The company has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months.
+* The company has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T (§232.405 of this chapter) during the preceding 12 months.
+
+**Market Value and Outstanding Shares**
+
+* Aggregate market value of voting stock held by non-affiliates: $305,793,119,000 as of May 31, 2025.
+* Number of shares of common stock outstanding as of June 13, 2025: 2,808,833,000.
+
+**Documents Incorporated by Reference**
+
+* Portions of the company's definitive proxy statement relating to its 2025 annual meeting of stockholders are incorporated by reference into Part III of this Annual Report on Form 10-K. The proxy statement will be filed with the U.S. Securities and Exchange Commission within 120 days of the company's fiscal year ended May 31, 2025.

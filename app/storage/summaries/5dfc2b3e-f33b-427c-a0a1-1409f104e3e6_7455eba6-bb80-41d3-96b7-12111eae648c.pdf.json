@@ -1,0 +1,10 @@
+{
+  "filename": "7455eba6-bb80-41d3-96b7-12111eae648c.pdf",
+  "summaries": [
+    "Here is a factual and concise summary of the document chunk:\n\n**Company Information**\n\n* Company Name: Oracle Corporation\n* State of Incorporation: Delaware\n* I.R.S. Employer Identification Number: 54-2185193\n* Address: 2300 Oracle Way, Austin, Texas 78741\n* Phone Number: (737) 867-1000\n\n**Securities Registered**\n\n* Common Stock, par value $0.01 per share (ORCL)\n* 3.125% senior notes due July 2025 (ORCL)\n\n**Other Information**\n\n* The company filed an Annual Report on Form 10-K for the fiscal year ended May 31, 2025.\n* The report was filed electronically.\n* The company is a Large Accelerated Filer.\n* The aggregate market value of non-affiliate shares was $305,793,119,000 as of May 31, 2025.\n* Number of shares of common stock outstanding as of June 13, 2025: 2,808,833,000.\n\n**Documents Incorporated by Reference**\n\n* Portions of the company's definitive proxy statement related to its 2025 annual meeting of stockholders are incorporated by reference into Part III of this Annual Report on Form 10-K."
+  ],
+  "uploaded_at": "2025-07-31T19:05:32.073941",
+  "temperature": 0.3,
+  "model": "llama3",
+  "label": "Oracle Corporation Form 10-K 2025"
+}

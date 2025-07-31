@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Summary Details</title>
+</head>
+<body>
+    <h1>All Summaries</h1>
+
+    {% for summary in summaries %}
+        <h3>{{ summary.filename }}</h3>
+        <p><strong>Model:</strong> {{ summary.model }}</p>
+        <p><strong>Temperature:</strong> {{ summary.temperature }}</p>
+        <p><strong>Uploaded:</strong> {{ summary.uploaded_at.strftime('%Y-%m-%d %H:%M:%S') }}</p>
+        <p><strong>Preview:</strong> {{ summary.preview }}</p>
+        <hr>
+    {% endfor %}
+
+    <a href="/summaries">Back to All Summaries</a>
+</body>
+</html>

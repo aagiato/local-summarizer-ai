@@ -8,50 +8,58 @@
   <h1>Upload a Document for Summarization</h1>
 
   <form method="POST" enctype="multipart/form-data">
-    <label>Choose a .pdf or .txt file:</label>
-    <input type="file" name="file" required><br><br>
+    <label>Choose a .pdf or .txt:</label>
+    <input type="file" name="file" accept=".pdf,.txt" required><br><br>
 
-    <label for="temperature">Temperature (creativity level):</label>
-    <input type="range" min="0" max="1" step="0.1" name="temperature" id="temperature" value="0.3">
-    <span id="temp-display">0.3</span><br><br>
+    <label>Temperature (creativity):</label>
+    <input type="range" name="temperature" min="0" max="1" step="0.05" value="0.3"
+           oninput="this.nextElementSibling.textContent = this.value">
+    <span>0.3</span><br><br>
 
-    <label for="model">Model:</label>
-    <select name="model" id="model">
-      <option value="llama3">LLaMA 3 (default - best for summarization)</option>
-      <option value="mistral">Mistral (faster, less detailed)</option>
-      <option value="qwen">Qwen (creative and flexible)</option>
-      <option value="deepseek">Deepseek 8B (technical, great for dense docs)</option>
+    <label>Model:</label>
+    <select name="model">
+      <option value="llama3">LLAMA 3 (default – best for summarization)</option>
+      <option value="vicuna2">Vicuna 2</option>
     </select><br><br>
 
-    <label for="export">Export Format:</label>
-    <select name="export" id="export">
-      <option value="both">Both TXT and PDF</option>
+    <label>Export Format:</label>
+    <select name="export">
       <option value="txt">TXT only</option>
       <option value="pdf">PDF only</option>
+      <option value="both" selected>Both TXT &amp; PDF</option>
     </select><br><br>
 
     <button type="submit">Summarize</button>
   </form>
 
   {% if done %}
-    <h2>Summary Complete</h2>
-    <p>Download your summaries:</p>
+    <hr>
+    <h2>✅ Summary Complete</h2>
+
+    <p><strong>Label:</strong> {{ summary.label }}</p>
+    <p>
+      <strong>Model:</strong> {{ summary.model }}
+      &nbsp;&nbsp;<strong>Temp:</strong> {{ summary.temperature }}
+      &nbsp;&nbsp;<strong>Time:</strong> {{ summary.uploaded_at }}
+    </p>
+
+    <h3>Summary:</h3>
+    <p>{{ summary.summaries[0] }}</p>
+
+    <h3>Exported Files (on disk):</h3>
     <ul>
-      {% if txt_link %}
-        <li><a href="{{ txt_link }}">Download TXT</a></li>
+      {% if summary.export_paths.txt %}
+        <li><code>TXT → {{ summary.export_paths.txt }}</code></li>
       {% endif %}
-      {% if pdf_link %}
-        <li><a href="{{ pdf_link }}">Download PDF</a></li>
+      {% if summary.export_paths.pdf %}
+        <li><code>PDF → {{ summary.export_paths.pdf }}</code></li>
       {% endif %}
     </ul>
+
+    <p>
+      Open your file explorer to those locations to retrieve your exports.
+    </p>
   {% endif %}
 
-  <script>
-    const tempSlider = document.getElementById('temperature');
-    const tempDisplay = document.getElementById('temp-display');
-    tempSlider.addEventListener('input', () => {
-      tempDisplay.textContent = tempSlider.value;
-    });
-  </script>
 </body>
 </html>
