@@ -1,0 +1,13 @@
+Filename: 7455eba6-bb80-41d3-96b7-12111eae648c.pdf
+Uploaded At: 2025-07-30T21:34:54.975436
+Temperature: 0.3
+
+--- Summary 1 ---
+ This document is a Form 10-K annual report for Oracle Corporation filed with the United States Securities and Exchange Commission (SEC) for the fiscal year ended on May 31, 2025. The report includes details such as the corporation's name, address, phone number, registered securities, and financial statements.
+
+Oracle Corporation is a large accelerated filer, and its common stock is traded on the New York Stock Exchange under the symbol ORCL. The report also indicates that Oracle has filed all required reports in compliance with the Securities Exchange Act of 1934 during the preceding 12 months.
+
+The aggregate market value of the voting stock held by non-affiliates was $305,793,119,000 as of May 31, 2025, based on the number of shares held and the closing sale price of common stock on November 29, 2024. The number of shares of common stock outstanding as of June 13, 2025, was 2,808,833,000.
+
+Portions of the corporation's definitive proxy statement relating to its 2025 annual meeting of stockholders are incorporated by reference into Part III of this Annual Report on Form 10-K. This proxy statement will be filed with the U.S. Securities and Exchange Commission within 120 days of the registrant’s fiscal year ended May 31, 2025.
+

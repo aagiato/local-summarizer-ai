@@ -1,96 +1,97 @@
-# insight-summarizer-ai# Insight Summarizer AI
+Local Summarizer AI
 
-Insight Summarizer AI is a fully AWS-hosted application designed to automatically parse, chunk, and summarize long-form financial documents using Anthropic's Claude 3 Sonnet via Amazon Bedrock. The tool is built with scalability and robustness in mind and is ideal for summarizing startup financials, investor memos, and operational reports.
+A local-first document summarization tool that processes .pdf or .txt files using a locally running LLM through Ollama. It returns concise summaries in PDF or TXT format — securely, privately, and entirely offline.
+Features
 
-## Project Overview
+    Upload .pdf or .txt files
 
-This tool performs the following:
+    Summarize with a local LLM (LLaMA 3, Mistral, etc.)
 
-- Accepts PDF or plain text documents
-- Breaks down large text into manageable chunks using a word-based strategy
-- Sends each chunk to Claude 3 Sonnet via Amazon Bedrock for summarization
-- Returns and compiles the summarized output for user review
+    Control temperature (creativity level)
 
-## Directory Structure
+    Choose between TXT and PDF output
 
-insight-summarizer-ai/
-├── chunking.py # Handles splitting text into word-based chunks
-├── load_and_chunk.py # Loads documents and applies chunking
-├── summarizer.py # Orchestrates chunking and summarization
-├── bedrock_claude_client.py # Connects to Amazon Bedrock and calls Claude
-├── data/ # Directory for input documents
-├── .gitignore # Ignores unnecessary or sensitive files
-└── README.md # Project documentation
+    Secure, offline-only processing
 
+    Simple HTML frontend for upload and configuration
 
-## Technology Stack
+Folder Structure
 
-- **Language**: Python 3.10
-- **Core AWS Services**:
-  - Amazon Bedrock (Claude 3 Sonnet)
-  - Amazon SageMaker (Notebook environment)
-  - AWS IAM (for permissions and roles)
-- **Libraries**:
-  - `boto3` for AWS interaction
-  - `pandas` for data handling
-  - `langchain` for potential LLM tooling
-  - `unstructured` for text extraction from files
+local-summarizer-ai/
+├── app/
+│ ├── fonts/
+│ │ └── DejaVuSans/ttf/DejaVuSans.ttf
+│ ├── templates/
+│ │ └── index.html
+│ └── main.py
+├── storage/
+│ ├── uploads/
+│ ├── summaries/
+│ └── exports/
+├── requirements.txt
+└── README.md
+Getting Started
+1. Clone the Repository
 
-## Setup Instructions
+git clone https://github.com/aagiato/local-summarizer-ai.git
+cd local-summarizer-ai
+2. (Recommended) Create a Virtual Environment
 
-1. Clone the repository:
+python -m venv venv
+source venv/bin/activate (on Windows: venv\Scripts\activate)
+3. Install Dependencies
 
-   ```bash
-   git clone https://github.com/aagiato/insight-summarizer-ai.git
-   cd insight-summarizer-ai
+pip install -r requirements.txt
+4. Install and Run Ollama
 
-    (Optional) Create a new Python environment:
+Download from https://ollama.com and install for your OS.
+Then run:
 
-conda create -n insight-summarizer-ai python=3.10
-conda activate insight-summarizer-ai
+ollama serve
+ollama run llama3
 
-Install dependencies:
+Optional: preload other models like mistral, qwen, or deepseek.
+5. Run the Flask App
 
-pip install boto3 pandas langchain unstructured
+python app/main.py
 
-Configure AWS credentials if running locally:
+Then visit:
+http://localhost:5000
+Usage
 
-    aws configure
+    Upload a .pdf or .txt file
 
-    If using SageMaker, ensure your IAM role has the necessary permissions.
+    Choose a model (llama3, mistral, etc.)
 
-    Run the notebook or script depending on your environment:
+    Set temperature (creativity level)
 
-        In SageMaker: run the cells in the notebook version of summarizer.py
+    Choose output format: TXT, PDF, or both
 
-        In local development: run summarizer.py via the command line or IDE
+    Click Summarize
 
-IAM Permissions Required
+    Download your result once processing completes
 
-Ensure that the executing user or SageMaker role has the following permissions:
+requirements.txt
 
-    bedrock:InvokeModel
+Flask==2.3.2
+requests==2.31.0
+PyMuPDF==1.23.7
+fpdf==1.7.2
 
-    sagemaker:* (if using SageMaker fully)
+To install manually:
+pip install Flask requests PyMuPDF fpdf
+Notes
 
-    logs:* (if logging is enabled)
+    Ensure Ollama is running at http://localhost:11434
 
-    Optional: s3:GetObject, s3:PutObject if using S3 for storage
+    Ensure the model (e.g., llama3) is installed and active
 
-Budget and Cost Controls
+    Exported PDFs are stored in storage/exports/
 
-A budget has been configured in AWS to trigger alerts once spending reaches $100. This is monitored via AWS Budgets and (optionally) SNS. You can also stop the SageMaker instance when not in use to limit compute costs.
-Next Steps
+    JSON summaries are saved in storage/summaries/
 
-    Add persistent output storage (e.g., S3)
+    Fonts for PDF export are stored in app/fonts/DejaVuSans/ttf/
 
-    Enable batch processing of documents
+License
 
-    Implement a user interface or API endpoint
-
-    Support more document types and automatic metadata extraction
-
-Author
-
-Andrew Agiato
-GitHub: @aagiato
+MIT License
